@@ -12,14 +12,15 @@ import org.springframework.context.annotation.Bean;
 public class ArticleGetApplication {
 
 	public static void main(String[] args) {
-		 SpringApplication.run(ArticleGetApplication.class, args);
+		SpringApplication.run(ArticleGetApplication.class, args);
 	}
 
 	@Bean
 	public Function<String, List<String>> getList() {
 
 		List<String> articles = new ArrayList<>();
-
+		articles.add("Sample article 1");
+		articles.add("Sample article 2");
 		return value -> articles;
 
 	}
