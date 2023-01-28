@@ -12,10 +12,10 @@ import org.springframework.context.annotation.Bean;
 public class ArticleGetApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ArticleGetApplication.class, args);
+		//SpringApplication.run(ArticleGetApplication.class, args);
 	}
 
-	@Bean
+	//@Bean
 	public Function<String, List<String>> getList() {
 
 		List<String> articles = new ArrayList<>();
@@ -24,4 +24,8 @@ public class ArticleGetApplication {
 		return value -> articles;
 
 	}
+	
+    public static String sayHello() {
+        return "Hello λ!";
+    }
 }
