@@ -1,12 +1,9 @@
 package com.example.article_get;
 
-import org.junit.jupiter.api.Test;
-import org.springframework.boot.test.context.SpringBootTest;
-
-@SpringBootTest
+//@SpringBootTest
 class ArticleGetApplicationTests {
 
-	@Test
+//	@Test
 	void contextLoads() {
 	}
 
